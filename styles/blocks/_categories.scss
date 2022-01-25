@@ -1,0 +1,67 @@
+/* CATEGORIES */
+
+.categories{
+    margin-top: 65px;
+}
+
+.categories-list{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.category-item{
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item:not(:last-child){
+    width: 360px;
+    height: 260px;
+}
+
+.category-item:last-child {
+    width: 100%;
+    height: 180px; 
+    margin-top: 30px;
+}
+
+.category-woman{
+    background-image: url(../images/category-woman.png);
+}
+
+.category-man{
+    background-image: url(../images/category-man.png);
+}
+
+.category-kid{
+    background-image: url(../images/category-kid.png);
+}
+
+.category-acc{
+    background-image: url(../images/category-acc.png);
+}
+
+
+.category-link{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.category-text-white{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.category-text-pink{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF6A6A;
+}
+

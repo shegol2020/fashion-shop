@@ -1,0 +1,30 @@
+html, body{
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, ul, p{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    flex-grow: 2;
+}
+
+.wrap{
+    width: 1140px; 
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+  }
