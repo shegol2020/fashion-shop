@@ -1,0 +1,120 @@
+.catalog-goods{
+    margin-top: 51px;
+}
+
+.filter-wrap{
+    @include flex-between;
+}
+
+.filter{
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 16px;
+
+    &:after{ 
+   content: '';
+   display: inline-block;
+   width: 15px;
+   height: 10px;
+   margin-left: 11px;
+   background-image: url(../images/filter-icon.svg);
+   background-repeat: no-repeat;
+    }
+}
+
+.filter-list{
+    list-style-type: none; 
+   display: flex;
+   flex-grow: 3;
+   justify-content: center;
+   gap: 28px;
+}
+
+.filter-button{
+    @include button-clear;
+    color: #6F6E6E;
+
+    &:after{
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height:5px;
+        margin-left: 10px;
+        background-image: url(../images/filter-arrow.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+.open-catalog-link{
+    font-family: inherit;
+    padding: 14px 38px; 
+    border: none;
+    outline: 1px solid #FF6A6A;
+    color: #FF6A6A;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+     
+    &:hover{
+     outline: none;
+     background-color: $color-add;
+     color: #fff;
+     }
+ }
+
+.pagination{
+    display: flex;
+	justify-content: center;
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	gap: 10px;	
+	border: 1px solid #EBEBEB;
+	padding: 11px;
+}
+
+.arrow-pagination{
+   cursor: pointer;
+   width: 8px;
+   height: 20px;
+   border: none;
+   background-color: #C4C4C4;
+   background-image: url(../images/arrow.svg);
+   background-repeat: no-repeat;
+
+   &-last{
+    padding-top: 20px;
+    transform: rotate(180deg);
+   }
+}
+
+.pagination-item--separator {
+	margin: 0 -10px;
+    color: #C4C4C4;
+}
+
+.pagination-link {
+	color: #C4C4C4;
+	background-color: inherit;
+	border: none;
+    cursor: pointer;
+
+    &:hover{
+        color: #EF5B70;
+    }
+}
+.pagination-link-active {
+	color: #EF5B70;
+}
+
+

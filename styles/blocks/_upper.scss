@@ -1,0 +1,46 @@
+.upper-title-box{
+    padding: 60px 0;
+    background-color: #F8F3F4;
+}
+
+.upper-title{
+    color: $color-add;
+    @include title-h2;
+}
+
+.upper-wrap{ 
+    @include flex-between;
+}
+
+
+/* BREADCRUMBS */
+
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 5px;
+  display: flex;
+}
+
+.breadcrumbs-item::before {
+  content: '/';
+}
+
+.breadcrumbs-item:first-child::before {
+  display: none;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.breadcrumbs-link-current {
+  font-weight: bold;
+  color: $color-add;
+}
