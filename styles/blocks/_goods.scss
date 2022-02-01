@@ -36,6 +36,13 @@
     width: 360px;
     height: 580px;  
     background-color: #F8F8F8;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+        // transform: scale(1.1);
+        }
 }
 
 .goods-info{
@@ -61,4 +68,42 @@
     color: #F16D7F;
     padding-top: 18px;
 }
+
+.goods-item:hover .goods-overlay{
+    transform: scale(1);
+}
+
+.goods-overlay{
+  position: absolute;
+  width: 360px;
+  height: 420px;
+  background-color: rgba(58, 56, 56, 0.86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+//   transform-origin: top;
+  transition: all 0.3s;
+}
+
+.add-btn{
+    @include button-clear;
+    padding: 13px;
+    color: #fff;
+    outline: 1px solid #FFFFFF;  
+    transition: all 0.3s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.add-btn img{
+    vertical-align: middle;
+    margin-right: 11px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
 

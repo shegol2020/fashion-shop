@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .category-item:not(:last-child){
@@ -28,6 +29,7 @@
     width: 100%;
     height: 180px; 
     margin-top: 30px;
+    
 }
 
 .category-woman{
@@ -51,6 +53,7 @@
     text-decoration: none;
     color: #fff;
     text-align: center;
+    z-index: 100;
 }
 
 .category-text-white{
@@ -63,5 +66,23 @@
     font-size: 16px;
     line-height: 19px;
     color: #FF6A6A;
+}
+
+
+.category-overlay{
+  position: absolute;
+  width: 360px;
+  height: 260px;
+  background-color: rgba(58, 56, 56, 0.86);
+  transition: all 0.5s;
+
+&:hover{
+ opacity: 0;  
+}
+    
+&-max{
+        width: 100%;
+        height: 180px;
+        }
 }
 

@@ -97,4 +97,12 @@
       background-color: #F16D7F;
       border: none;
       color: #fff;
+      transition: all 0.3s;
+
+    &:hover{
+        outline: none;
+        background-color: $color-add;
+        color: #fff;
+        transform: scale(1.2);
+        }
   }
