@@ -1,0 +1,66 @@
+.promo{
+    background-color: #F1E4E6;
+} 
+
+.promo-wrap{
+    min-height: 764px;
+    background-image: url(../images/promo-man.png);
+    background-repeat: no-repeat;
+    background-position-x: -225px;
+    background-position-y: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width: $df-tablet) {
+        min-height:368px;
+		background-size: 50%;
+		background-position: 0 0;    
+    }
+
+    @media (max-width: $df-mobile) {
+		background-image: none;
+    }
+}
+
+.promo-title{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    border-left: 12px solid $color-add;
+    padding-left: 16px; 
+    margin-right: 100px;
+
+    @media (max-width: $df-tablet) {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    @media (max-width: $df-mobile) {
+        padding-left: 0px;
+		width: 100%;
+		text-align: center;
+        font-size: 38px;
+        line-height: 46px;    
+    }
+}
+
+.promo-text{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    @media (max-width: $df-tablet) {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    @media (max-width: $df-mobile) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.promo-text-pink{
+    color: $color-add;
+}

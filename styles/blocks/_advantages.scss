@@ -1,0 +1,42 @@
+/* ADVANTAGES */
+
+.advantages{
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.advantage-list{
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    color: #FBFBFB;
+    text-align: center;
+
+    @media (max-width: $df-tablet) {
+        flex-direction: column;
+        align-items: center;
+        gap: 46px;
+    }
+}
+
+.advantage-item{
+    
+    @media (max-width: $df-tablet) {
+        width: 360px;
+    }
+}
+
+.advantage-title{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-top: 28px;
+}
+
+.advantage-text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 16px;
+}

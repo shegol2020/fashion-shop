@@ -1,0 +1,103 @@
+/* FEEDBACK */
+
+.feedback{
+    background-color: #e1e1e1;
+    background-image: url(../images/feedback-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 85px 0 126px 0;
+}
+
+.feedback-wrap{
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $df-tablet) {
+        flex-direction: column;
+      }
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-text{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    width: 360px;
+    margin-top: 30px;
+}
+
+.review-decor{
+    font-style: italic;
+}
+
+.subscribe{
+    @media (max-width: $df-tablet) {
+        margin-top: 48px;
+
+    }
+
+    @media (max-width: $df-mobile) {
+        margin-top: 59px;
+
+    }
+}
+
+.subscribe-title{
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-decor{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+   
+.form-field {
+    font-family:inherit;
+      padding: 18px 23px;
+      background-color: #F4F4F4B2;
+      border: none;
+      border-radius: 20px 0 0 20px;
+      color: #222;
+      background-color: #E1E1E1;
+  }
+  
+.form-field::placeholder {
+      color: #222224;
+      font-size: 14px;
+      line-height: 17px;
+  }
+  
+.form-button {
+    font-family:inherit;
+      padding: 18px 23px;
+      background-color: #F16D7F;
+      border: none;
+      border-radius:  0 20px 20px 0;
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover{
+        outline: none;
+        color: #fff;
+        background-color: #E05C6E;
+        }
+  }

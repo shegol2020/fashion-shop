@@ -1,0 +1,130 @@
+/* CATEGORIES */
+
+.categories{
+    margin-top: 65px;
+}
+
+.categories-list{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+
+    @media (max-width: $df-mobile) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.category-item{
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.category-item:not(:last-child){
+    width: 32%;
+    min-height: 260px;
+
+    @media (max-width: $df-tablet) {
+        min-height: 168px;
+    }
+
+    @media (max-width: $df-mobile) {
+        width: 343px;
+        min-height: 247px;
+    }
+}
+
+.category-item:last-child {
+    width: 100%;
+    min-height: 180px; 
+    margin-top: 30px;
+    
+
+    @media (max-width: $df-tablet) {
+        min-height: 116px;
+    }
+
+    @media (max-width: $df-mobile) {
+        min-height: 111px;
+        width: 343px;
+        margin-top: 0;
+    }
+}
+
+.category-woman{
+    background-image: url(../images/category-woman.png);
+}
+
+.category-man{
+    background-image: url(../images/category-man.png);
+}
+
+.category-kid{
+    background-image: url(../images/category-kid.png);
+}
+
+.category-acc{
+    background-image: url(../images/category-acc.png);
+}
+
+
+.category-link{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+}
+
+.category-text-white{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.category-text-pink{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF6A6A;
+}
+
+
+.category-overlay{
+  position: absolute;
+  width: 100%;
+  min-height: 260px;
+  background-color: rgba(58, 56, 56, 0.86);
+  transition: all 0.5s;
+
+&:hover{
+ opacity: 0;  
+}
+    
+&-max{
+        width: 100%;
+        min-height: 180px;
+
+        @media (max-width: $df-tablet) {
+            min-height: 116px;
+        }
+    
+        @media (max-width: $df-mobile) {
+            min-height: none;
+        }
+
+        }
+
+    // @media (max-width: $df-tablet) {
+    //         min-height: 168px;
+    //     }
+    
+    // @media (max-width: $df-mobile) {
+    //         min-height: 247px;
+    //     }
+}
+

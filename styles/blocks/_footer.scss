@@ -1,0 +1,51 @@
+ /* FOOTER */
+
+ .footer{
+    background-color: #222;
+    color: #fff;
+    padding: 23px 0;
+
+    @media (max-width: $df-mobile) {
+    padding: 9px 0;
+  }
+}
+
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $df-mobile) {
+        flex-direction: column-reverse;
+      }
+}
+
+.footer-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+
+  @media (max-width: $df-mobile) {
+      margin: 35px;
+
+  }
+}
+
+.footer-link {
+    color: #000;
+    text-decoration: none;
+    font-size:20px;
+    background-color: #fff;
+    height: 32px; 
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+
+  &:hover {
+     color: #fff;
+     background-color: #F16D7F;
+  }
+}
