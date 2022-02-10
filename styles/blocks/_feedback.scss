@@ -12,6 +12,10 @@
 .feedback-wrap{
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: $df-tablet) {
+        flex-direction: column;
+      }
 }
 
 .review{
@@ -32,6 +36,18 @@
 
 .review-decor{
     font-style: italic;
+}
+
+.subscribe{
+    @media (max-width: $df-tablet) {
+        margin-top: 48px;
+
+    }
+
+    @media (max-width: $df-mobile) {
+        margin-top: 59px;
+
+    }
 }
 
 .subscribe-title{

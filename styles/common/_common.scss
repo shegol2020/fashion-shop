@@ -20,9 +20,16 @@ h1, h2, h3, ul, p{
 }
 
 .wrap{
-    width: 1140px; 
+    max-width: 1140px; 
+    min-width: 360px; 
     margin: 0 auto;
+    padding: 0 16px;
+
+    @media (max-width: $df-mobile) {
+        padding: 0 8px;
+    }
 }
+
 
 .visually-hidden {
     position: fixed;

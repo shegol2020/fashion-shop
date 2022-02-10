@@ -10,6 +10,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
+
+    @media (max-width: $df-mobile) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 }
 
 .category-item{
@@ -21,15 +27,34 @@
 }
 
 .category-item:not(:last-child){
-    width: 360px;
-    height: 260px;
+    width: 32%;
+    min-height: 260px;
+
+    @media (max-width: $df-tablet) {
+        min-height: 168px;
+    }
+
+    @media (max-width: $df-mobile) {
+        width: 343px;
+        min-height: 247px;
+    }
 }
 
 .category-item:last-child {
     width: 100%;
-    height: 180px; 
+    min-height: 180px; 
     margin-top: 30px;
     
+
+    @media (max-width: $df-tablet) {
+        min-height: 116px;
+    }
+
+    @media (max-width: $df-mobile) {
+        min-height: 111px;
+        width: 343px;
+        margin-top: 0;
+    }
 }
 
 .category-woman{
@@ -71,8 +96,8 @@
 
 .category-overlay{
   position: absolute;
-  width: 360px;
-  height: 260px;
+  width: 100%;
+  min-height: 260px;
   background-color: rgba(58, 56, 56, 0.86);
   transition: all 0.5s;
 
@@ -82,7 +107,24 @@
     
 &-max{
         width: 100%;
-        height: 180px;
+        min-height: 180px;
+
+        @media (max-width: $df-tablet) {
+            min-height: 116px;
         }
+    
+        @media (max-width: $df-mobile) {
+            min-height: none;
+        }
+
+        }
+
+    // @media (max-width: $df-tablet) {
+    //         min-height: 168px;
+    //     }
+    
+    // @media (max-width: $df-mobile) {
+    //         min-height: 247px;
+    //     }
 }
 

@@ -1,6 +1,10 @@
 .upper-title-box{
     padding: 60px 0;
     background-color: #F8F3F4;
+
+    @media (max-width: $df-mobile) {
+    text-align: center;    
+  }
 }
 
 .upper-title{
