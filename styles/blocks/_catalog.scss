@@ -1,15 +1,23 @@
 .catalog-goods{
     margin-top: 51px;
+
+    @media (max-width: $df-tablet) {
+        margin: 24px;
+  
+    }
 }
 
 .filter-wrap{
-    @include flex-between;
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 .filter{
     display: block;
     background-color: inherit;
     font-family: inherit;
+    text-transform: uppercase; 
     border: none;
     cursor: pointer;
     font-weight: 600;
@@ -18,6 +26,11 @@
     margin-left: 16px;
     margin-top: 13px;
     transition: all 0.3s;
+
+    @media (max-width: $df-tablet) {
+        margin-left:0;
+    }
+    
 
     &:after{ 
    content: '';
@@ -34,19 +47,39 @@
     }
 }
 
+
+
 .filter-list{
-    list-style-type: none; 
+   list-style-type: none; 
    display: flex;
-   flex-grow: 3;
-   justify-content: start;
-   gap: 150px;
-//    justify-content: center;
-//    gap: 28px;
+   justify-content: flex-start;
+   align-items: center;
+    width: 50%;
+    gap: 20px;
+
+
+    @media (max-width: $df-tablet) {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    @media (max-width: $df-mobile) {
+        justify-content: space-around;
+    }
+}
+
+.filter-item{
+    width: 25%; 
+
+    @media (max-width: $df-mobile) {
+        font-size: 10px;
+    }
 }
 
 .filter-button{
     @include button-clear;
     color: #6F6E6E;
+    text-transform: uppercase; 
     transition: all 0.3s;
     position: absolute;
 
@@ -67,14 +100,14 @@
 
 ::-webkit-details-marker {display: none;}
 
+
 .filter-dropdown{
     position: relative;
-    width: 360px;
+    width: 25%;
 
-    &[open]{ 
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-        // z-index: 1110;
-    }
+    // &[open]{ 
+    //     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    // }
 }
 
 .filter-drop{
@@ -82,6 +115,7 @@
     background-color: #fff;
     width: 360px;
     padding: 18px 0;
+    margin-top: 10px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     z-index: 110;
 
@@ -139,6 +173,12 @@
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     z-index: 110;
     box-sizing: border-box;
+    text-transform: uppercase; 
+}
+
+.price-range{
+    width: 25%;
+    background-color: #fff;
 }
 
 .open-catalog-link{

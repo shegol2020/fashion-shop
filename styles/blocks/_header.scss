@@ -30,6 +30,7 @@
 .header-button{
     background-color: inherit;
     border: none;
+    cursor: pointer;
 }
 
 .header-logo{
@@ -61,11 +62,30 @@
     height: 764px;
     padding: 33px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    box-sizing: border-box;
+    box-sizing: border-box;  
+    z-index: 1000;
+}
+
+
+.main-nav-max{
+    display: none;
+    @media (max-width: $df-tablet) {
+        display: none;
+    }
 }
 
 .main-nav-closed{
     display: none;
+}
+
+.main-nav-min{
+    width: 150px;
+    height: 200px;
+    display: none;
+
+    @media (max-width: $df-tablet) {
+        display: block;
+    }
 }
 
 .main-nav-box{
@@ -81,6 +101,7 @@
     height: 13px;
     border: none;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .main-nav-title{
@@ -88,6 +109,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    text-transform: uppercase; 
 }
 
 .main-nav-list{ 
@@ -109,9 +131,27 @@
 .main-nav-link{
     text-decoration: none;
     color: #F16D7F;
+    text-transform: uppercase; 
 }
  
 .submenu-item-link{
     text-decoration: none;
     color: #6F6E6E;
+}
+
+/* счетчик корзины */
+
+
+#lblCartCount {
+    font-size: 12px;
+    background: $color-add;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+}
+.cart-badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 9px;
 }

@@ -79,6 +79,7 @@
     color: #fff;
     text-align: center;
     z-index: 100;
+    text-transform: uppercase; 
 }
 
 .category-text-white{
@@ -98,8 +99,16 @@
   position: absolute;
   width: 100%;
   min-height: 260px;
-  background-color: rgba(58, 56, 56, 0.86);
+  background-color: #3a3838db;
   transition: all 0.5s;
+
+  @media (max-width: $df-tablet) {
+    min-height: 168px;
+}
+
+@media (max-width: $df-mobile) {
+    min-height: 247px;
+}
 
 &:hover{
  opacity: 0;  
@@ -119,12 +128,6 @@
 
         }
 
-    // @media (max-width: $df-tablet) {
-    //         min-height: 168px;
-    //     }
     
-    // @media (max-width: $df-mobile) {
-    //         min-height: 247px;
-    //     }
 }
 

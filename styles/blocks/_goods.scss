@@ -56,15 +56,11 @@
 
 .goods-item{
     width: 360px;
-    height: 580px;  
+    min-height: 580px;  
     background-color: #F8F8F8;
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
-
-    &:hover{
-        // transform: scale(1.1);
-        }
 }
 
 .goods-info{
@@ -74,6 +70,7 @@
 .goods-card-title{
     font-size: 13px;
     line-height: 16px;
+    text-transform: uppercase; 
 }
 
 .goods-card-text{
@@ -116,7 +113,7 @@
     transition: all 0.3s;
 
     &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 
