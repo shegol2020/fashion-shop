@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <title>Registration - Fashion shop</title>
+    <title>Cart - Fashion shop</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                     <li class="header-nav-item"><a href="registration.html" class="header-link">
                             <img src="images/icon-profile.png" alt="profile">
                         </a></li>
-                    <li class="header-nav-item"><a href="cart.html" class="header-link">
+                    <li class="header-nav-item"><a href="#" class="header-link">
                             <img src="images/icon-cart.png" alt="cart">
                         </a></li>
                 </ul>
@@ -96,60 +96,74 @@
         </div>
     </header>
     <main class="main">
-        <section class="registration">
+        <section class="cart">
             <div class="upper-title-box">
                 <div class="wrap">
-                    <h1 class="upper-title">REGISTRATION</h1>
+                    <h1 class="upper-title">shopping cart</h1>
                 </div>
             </div>
-            <div class="wrap">
-                <div class="registration-info ">
-                    <div class="registration-form">
+            <div class="wrap cart-wrap">
+                <div class="cart-container">
+                    <ul class="card-list">
+                        <li class="card-item">
+                            <img src="images/cart-photo-1.png" alt="" class="card-photo">
+                            <div class="card-info">
+                                <div class="cart-info-title">MANGO PEOPLE T-SHIRT</div>
+                                <div class="cart-info-details">
+                                    <p>Price: <span class="cart-info-highlight">$300</span> </p>
+                                    <p>Color: Red</p>
+                                    <p>Size: Xl </p>
+                                    <p>Quantity: <input type="number" class="cart-input"></p>
+                                </div>
+                            </div>
+                            <button class="card-close"></button>
+                        </li>
+
+                        <li class="card-item">
+                            <img src="images/cart-photo-2.png" alt="" class="card-photo">
+                            <div class="card-info">
+                                <div class="cart-info-title">MANGO PEOPLE T-SHIRT</div>
+                                <div class="cart-info-details">
+                                    <p>Price: <span class="cart-info-highlight">$300</span> </p>
+                                    <p>Color: Red</p>
+                                    <p>Size: Xl </p>
+                                    <p>Quantity: <input type="number" class="cart-input"></p>
+
+                                </div>
+                            </div>
+                            <button class="card-close"></button>
+                        </li>
+
+                    </ul>
+                    <div class="cart-btns">
+                        <button class="cart-btn cart-clear">Clear shopping cart</button>
+                        <a href="catalog.html" class="cart-btn cart-catalog">Continue shopping</a>
+                    </div>
+                    <div class="cart-form">
                         <form action="#">
-                            <p class="registration-form-title">Your Name</p>
+                            <p class="registration-form-title">SHIPPING ADDRESS</p>
                             <input class="registration-form-field" placeholder="First Name" type="text" required>
                             <input class="registration-form-field" placeholder="Last Name" type="text">
-                            <div class="registration-radio">
-                                <label><input type="radio" name="gender" checked>Male</label>
-                                <label><input type="radio" name="gender">Female</label>
-                            </div>
-                            <p class="registration-form-title">Login details</p>
-                            <input class="registration-form-field" placeholder="Email" type="email" required>
-                            <input class="registration-form-field registration-form-field-last" placeholder="Password"
-                                type="password">
-                            <p class="registration-form-text">Please use 8 or more characters, with at least 1 number
-                                and a mixture
-                                of
-                                uppercase and lowercase letters</p>
-                            <button type="submit" class="registration-form-button">JOIN NOW&emsp;&rarr;</button>
+                            <input class="registration-form-field" placeholder="Postcode / Zip" type="text">
+
+                            <button type="submit" class="cart-form-button">Get a quote</button>
                         </form>
 
                     </div>
-                    <div class="registration-text">
-                        <h2 class="registration-text-title">LOYALTY HAS ITS PERKS</h2>
-                        <p class="registration-text-main">Get in on the loyalty program where you can earn points and
-                            unlock
-                            serious perks. Starting with these as soon as you join:</p>
-                        <ul class="registration-text-list">
-                            <li class="registration-text-list-item">15% off welcome offer
-                            </li>
-                            <li class="registration-text-list-item">Free shipping, returns and exchanges on all orders
-
-                            </li>
-                            <li class="registration-text-list-item">$10 off a purchase on your birthday
-
-                            </li>
-                            <li class="registration-text-list-item">Early access to products</li>
-                            <li class="registration-text-list-item">Exclusive offers & rewards</li>
-                        </ul>
+                    <div class="cart-sum">
+                        <div class="cart-sum-text">
+                            <p class="cart-sum-sub">SUB TOTAL $900</p>
+                            <p class="cart-sum-total">GRAND TOTAL <span class="cart-sum-sub-price">$900</span></p>
+                            <div class="cart-line"></div>
+                        </div>
+                        <button class="cart-sum-btn">PROCEED TO CHECKOUT</button>
                     </div>
                 </div>
             </div>
-
-
         </section>
 
     </main>
+
 
     <section class="feedback">
         <div class="wrap feedback-wrap">

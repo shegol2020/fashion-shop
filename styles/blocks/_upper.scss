@@ -10,14 +10,26 @@
 .upper-title{
     color: $color-add;
     @include title-h2;
+    text-transform: uppercase; 
 }
 
 .upper-wrap{ 
     @include flex-between;
+
+    @media (max-width: $df-mobile) {
+     flex-direction: column;
+     align-items: center;
+  }
 }
 
 
 /* BREADCRUMBS */
+
+.breadcrumbs{
+  @media (max-width: $df-mobile) {
+   margin-top: 32px;
+}
+}
 
 .breadcrumbs-list {
   list-style: none;
