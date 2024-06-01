@@ -35,3 +35,7 @@ h1, h2, h3, ul, p{
     position: fixed;
     transform: scale(0);
   }
+
+button {
+    all: unset;
+}
