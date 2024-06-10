@@ -1572,7 +1572,7 @@ button {
   left: 0;
   width: 47px;
   height: 47px;
-  background-image: url(/images/product-arrow.png);
+  background-image: url(../../images/product-arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
@@ -1585,7 +1585,7 @@ button {
 .product-arrow-right {
   left: auto;
   right: 0;
-  background-image: url(/images/product-arrow-right.png);
+  background-image: url(../../images/product-arrow-right.png);
   transition: transform 0.3s;
 }
 .product-arrow-right:hover {
